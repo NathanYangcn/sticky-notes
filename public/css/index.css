@@ -1,0 +1,176 @@
+/* reset css */
+div,ul,li,p,a,span,img {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+/* general css */
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}#header {
+	height: 50px;
+	color: #fff;
+	background-color: #333;
+}
+#header a {
+	color: #fff;
+}
+#header>.optic-list {
+	float: left;
+	margin-left: 50px; 
+	line-height: 50px;
+}
+#header>.add-note {
+	box-sizing: border-box;
+	position: fixed;
+	right: 15px;
+	bottom: 100px;
+	border: 2px solid #666;
+	width: 35px;
+	height: 35px;
+	font-size: 20px;
+	color: #666;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 99;
+}
+#header>.add-note:hover {
+	color: white;
+	background-color: red;
+}
+#header>.user-area {
+	float: right;
+	margin-right: 50px;
+	/*height: 50px;*/
+}
+#header>.user-area>li {
+	float: left;
+	margin-left: 25px;
+	height: 50px;
+	line-height: 50px;
+}
+#header>.user-area img {
+	margin-top: 7px;
+	border-radius: 50%;
+    height: 36px;
+    line-height: 50px;
+}
+#header>.user-area span, #header>.user-area a {
+	line-height: 50px;
+}
+#content {
+	position: relative;
+	margin: 30px auto 0;
+	min-width: 250px;
+	max-width: 1000px;
+}
+#background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	background: rgba(0,0,0,0.1) repeat fixed top center;
+	z-index: -3;
+}#content>.note {
+    position: absolute;;
+    color: #333;
+    width: 230px;
+    margin: 10px;
+    opacity: 1;
+    transition: all 1s;
+}
+#content>.note>.note-head{
+    border-top-right-radius: 15px 100px;
+    height: 25px;
+    background-color: #ea9b35;
+}
+#content>.note .icon-clip {
+    position: relative;
+    top: -9px;
+    margin-right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#content>.note .delete {
+    float: right;
+    margin-right: 5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0);
+    line-height: 25px;
+    cursor: pointer;
+}
+#content>.note>.note-body{
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom-left-radius: 50px 500px;
+    border-bottom-right-radius: 500px 50px;
+    min-height: 80px;
+    background-color: #efb04e;
+    outline: none;
+    cursor: pointer;
+}
+#content>.note>.note-body:before, #content>.note>.note-head:before {
+    transform: skew(-15deg) rotate(-5deg);
+    left: 15px;
+}
+#content>.note>.note-body:after, #content>.note>.note-head:after {
+    transform: skew(15deg) rotate(5deg);
+    right: 15px;
+}
+#content>.note>.note-body:before, #content>.note>.note-body:after {
+    position: absolute;
+    bottom: 15px;
+    width: 90%;
+    height: 20%;
+    content: ' ';
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 300px;
+    height: 50px;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.75);
+    text-align: center;
+    line-height: 50px;
+    z-index: 100;
+}/*回到顶部样式*/
+#go-top {
+    box-sizing: border-box;
+    position: fixed;
+    right: 15px;
+    bottom: 135px;
+    display: none;
+    padding-top: 8px;
+    border: 2px solid #666;
+    border-bottom: none;
+    border-radius: 35px 35px 0 0;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #666;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99;
+}
+#go-top:hover {
+    color: white;
+    background-color: red;
+}

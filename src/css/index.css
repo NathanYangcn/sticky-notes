@@ -1,0 +1,68 @@
+#header {
+	height: 50px;
+	color: #fff;
+	background-color: #333;
+}
+#header a {
+	color: #fff;
+}
+#header>.optic-list {
+	float: left;
+	margin-left: 50px; 
+	line-height: 50px;
+}
+#header>.add-note {
+	box-sizing: border-box;
+	position: fixed;
+	right: 15px;
+	bottom: 100px;
+	border: 2px solid #666;
+	width: 35px;
+	height: 35px;
+	font-size: 20px;
+	color: #666;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 99;
+}
+#header>.add-note:hover {
+	color: white;
+	background-color: red;
+}
+#header>.user-area {
+	float: right;
+	margin-right: 50px;
+	/*height: 50px;*/
+}
+#header>.user-area>li {
+	float: left;
+	margin-left: 25px;
+	height: 50px;
+	line-height: 50px;
+}
+#header>.user-area img {
+	margin-top: 7px;
+	border-radius: 50%;
+    height: 36px;
+    line-height: 50px;
+}
+#header>.user-area span, #header>.user-area a {
+	line-height: 50px;
+}
+#content {
+	position: relative;
+	margin: 30px auto 0;
+	min-width: 250px;
+	max-width: 1000px;
+}
+#background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	background: rgba(0,0,0,0.1) repeat fixed top center;
+	z-index: -3;
+}
