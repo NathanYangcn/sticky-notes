@@ -5,21 +5,21 @@
 
 - 下载
 
-git clone git@github.com:NathanYangcn/sticky-notes.git
+	git clone git@github.com:NathanYangcn/sticky-notes.git
 
 - 进入项目
 
-cd sticky-notes
+	cd sticky-notes
 
 - 安装依赖
 
-npm install
+	npm install
 
 - 运行
 
-npm start
+	npm start
 
-浏览器输入 http://localhost:3000/ 打开网页
+	浏览器输入 http://localhost:3000/ 打开网页
 
 # 实现了哪些功能？
 1. 添加便签
