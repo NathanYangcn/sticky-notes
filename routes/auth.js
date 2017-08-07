@@ -19,7 +19,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GitHubStrategy({
     clientID: '0bf385ab0c7e47044e9f',
     clientSecret: 'af75eb6a4ad88868293c6550587b6c15d2c4d1d7',
-    callbackURL: "http://yangyoung.top//auth/github/callback"
+    callbackURL: "http://localhost:3000/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     done(null, profile);

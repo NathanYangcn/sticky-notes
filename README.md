@@ -1,6 +1,25 @@
 # 这是什么？
 - 这是一个nodeJS应用，使用express框架搭建的便签网站，暂时可用于文字记录，后续可扩展方向很多
-- [预览地址](http://yangyoung.top/)
+
+# 安装部署
+
+- 下载
+
+git clone git@github.com:NathanYangcn/sticky-notes.git
+
+- 进入项目
+
+cd sticky-notes
+
+- 安装依赖
+
+npm install
+
+- 运行
+
+npm start
+
+浏览器输入 http://localhost:3000/ 打开网页
 
 # 实现了哪些功能？
 1. 添加便签
